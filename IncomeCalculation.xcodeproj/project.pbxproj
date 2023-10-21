@@ -10,7 +10,6 @@
 		D2229C4C2AE40322000CAC1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2229C4B2AE40322000CAC1C /* AppDelegate.swift */; };
 		D2229C4E2AE40322000CAC1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2229C4D2AE40322000CAC1C /* SceneDelegate.swift */; };
 		D2229C502AE40322000CAC1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2229C4F2AE40322000CAC1C /* ViewController.swift */; };
-		D2229C532AE40322000CAC1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2229C512AE40322000CAC1C /* Main.storyboard */; };
 		D2229C552AE40322000CAC1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2229C542AE40322000CAC1C /* Assets.xcassets */; };
 		D2229C582AE40322000CAC1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2229C562AE40322000CAC1C /* LaunchScreen.storyboard */; };
 		D2229C632AE40323000CAC1C /* IncomeCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2229C622AE40323000CAC1C /* IncomeCalculationTests.swift */; };
@@ -40,7 +39,6 @@
 		D2229C4B2AE40322000CAC1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2229C4D2AE40322000CAC1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D2229C4F2AE40322000CAC1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2229C522AE40322000CAC1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2229C542AE40322000CAC1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2229C572AE40322000CAC1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2229C592AE40322000CAC1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +97,11 @@
 		D2229C4A2AE40322000CAC1C /* IncomeCalculation */ = {
 			isa = PBXGroup;
 			children = (
-				D2229C4B2AE40322000CAC1C /* AppDelegate.swift */,
-				D2229C4D2AE40322000CAC1C /* SceneDelegate.swift */,
-				D2229C4F2AE40322000CAC1C /* ViewController.swift */,
-				D2229C512AE40322000CAC1C /* Main.storyboard */,
-				D2229C542AE40322000CAC1C /* Assets.xcassets */,
-				D2229C562AE40322000CAC1C /* LaunchScreen.storyboard */,
-				D2229C592AE40322000CAC1C /* Info.plist */,
+				D2229C7B2AE405E0000CAC1C /* Resources */,
+				D2229C7E2AE405F5000CAC1C /* Models */,
+				D2229C7D2AE405F1000CAC1C /* View */,
+				D2229C7C2AE405EA000CAC1C /* ViewModels */,
+				D2229C7F2AE405FE000CAC1C /* Auxiliary */,
 			);
 			path = IncomeCalculation;
 			sourceTree = "<group>";
@@ -125,6 +121,47 @@
 				D2229C6E2AE40323000CAC1C /* IncomeCalculationUITestsLaunchTests.swift */,
 			);
 			path = IncomeCalculationUITests;
+			sourceTree = "<group>";
+		};
+		D2229C7B2AE405E0000CAC1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2229C4B2AE40322000CAC1C /* AppDelegate.swift */,
+				D2229C4D2AE40322000CAC1C /* SceneDelegate.swift */,
+				D2229C592AE40322000CAC1C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2229C7C2AE405EA000CAC1C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D2229C7D2AE405F1000CAC1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2229C4F2AE40322000CAC1C /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2229C7E2AE405F5000CAC1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2229C7F2AE405FE000CAC1C /* Auxiliary */ = {
+			isa = PBXGroup;
+			children = (
+				D2229C542AE40322000CAC1C /* Assets.xcassets */,
+				D2229C562AE40322000CAC1C /* LaunchScreen.storyboard */,
+			);
+			path = Auxiliary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +270,6 @@
 			files = (
 				D2229C582AE40322000CAC1C /* LaunchScreen.storyboard in Resources */,
 				D2229C552AE40322000CAC1C /* Assets.xcassets in Resources */,
-				D2229C532AE40322000CAC1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D2229C512AE40322000CAC1C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2229C522AE40322000CAC1C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2229C562AE40322000CAC1C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,12 +472,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32MW45ALLS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = IncomeCalculation/Info.plist;
+				INFOPLIST_FILE = IncomeCalculation/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,12 +499,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32MW45ALLS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = IncomeCalculation/Info.plist;
+				INFOPLIST_FILE = IncomeCalculation/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
